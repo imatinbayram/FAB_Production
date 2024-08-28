@@ -19,7 +19,7 @@ def load_data():
     data = pd.read_excel('Excel.xlsx')
     return data
 
-st.logo('fablogo-bg.png')
+st.sidebar.image('fablogo-bg.png')
 #Melumat yenilemek ucun knopka
 res_button = st.sidebar.button(':red[🗘 Məlumatları Yenilə]')
 if res_button:
