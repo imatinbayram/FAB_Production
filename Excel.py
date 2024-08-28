@@ -4,7 +4,7 @@ import numpy as np
 
 #Sehifenin nastroykasi
 st.set_page_config(
-    page_title='İstehsal',
+    page_title='FAB İstehsal',
     page_icon='logo.png',
     layout="wide",
     initial_sidebar_state="expanded",
@@ -19,6 +19,7 @@ def load_data():
     data = pd.read_excel('Excel.xlsx')
     return data
 
+st.sidebar.image('fablogo-bg.png')
 #Melumat yenilemek ucun knopka
 res_button = st.sidebar.button(':red[🗘 Məlumatları Yenilə]')
 if res_button:
