@@ -19,7 +19,7 @@ def load_data():
     data = pd.read_excel('Excel.xlsx')
     return data
 
-st.sidebar.image('fablogo-bg.png')
+st.sidebar.image('fablogo-bg.png',  use_column_width = True)
 #Melumat yenilemek ucun knopka
 res_button = st.sidebar.button(':red[🗘 Məlumatları Yenilə]')
 if res_button:
@@ -140,6 +140,10 @@ css_page = """
     
     [data-testid="stElementToolbar"] {
         display: none;
+    }
+    
+    button[title="View fullscreen"] {
+        visibility: hidden;
     }
     
 </style>
